@@ -13,9 +13,9 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
 
-    "onCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && PATH=$PATH:$HOME/.cargo/bin uv venv",
+    // "onCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && PATH=$PATH:$HOME/.cargo/bin uv venv",
 
-    "updateContentCommand": "PATH=$PATH:$HOME/.cargo/bin uv pip install .",
+    // "updateContentCommand": "PATH=$PATH:$HOME/.cargo/bin uv pip install .",
 
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "uname -a",
