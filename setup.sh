@@ -1,4 +1,11 @@
 #!/bin/bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-PATH=$PATH:$HOME/.cargo/bin uv venv
-PATH=$PATH:$HOME/.cargo/bin uv pip install .
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+if ! command -v uv &> /dev/null; then
+    pipx install uv
+
+uv venv
+source .venv/bin/activate
+uv pip install .

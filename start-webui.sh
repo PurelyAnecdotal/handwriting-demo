@@ -21,12 +21,9 @@ else
     echo "Bun is already installed."
 fi
 
-# Change to the webui directory
 cd ./webui
 
-# Run build and preview commands
-echo "Running 'bun run build'..."
-bun run build
+bun install
 
-echo "Running 'bun run preview --host'..."
-bun run preview --host
+bun run build
+bun --bun run preview --host
